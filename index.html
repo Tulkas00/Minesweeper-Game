@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minesweeper</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Minesweeper</h1>
+  <p>Right-click to place or remove flags. Reveal all non-mine cells to win!</p>
+  
+  <div id="controls">
+    <label for="level">Choose Level:</label>
+    <select id="level">
+      <option value="easy">Easy (8x8, 10 Mines)</option>
+      <option value="medium">Medium (16x16, 40 Mines)</option>
+      <option value="hard">Hard (24x24, 99 Mines)</option>
+    </select>
+    <button id="restart">Start Game</button>
+  </div>
+  
+  <div id="game-container"></div>
+  <div id="status">Game in Progress</div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
